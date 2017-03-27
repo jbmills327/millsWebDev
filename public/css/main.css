@@ -4,43 +4,137 @@ html body {
 
 body {
     position: relative;
-}
-
-.navBar {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 10%;
     background-color: black;
-    z-index: 1;
 }
 
-.header {
+
+/*.header {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(./resources/nebula.jpg);
     background-size: cover;
     background-attachment: fixed;
+}*/
+
+.myFamily {
+    /*position: relative;*/
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 300px;
+    height: auto;
+    float: left;
+    border-radius: 7px;
+    border: 5px solid rgba(0, 0, 0, 0.7);
 }
 
-.header h1 {
-    position: fixed;
-    top: 15%;
-    left: 78%;
+.navBar {
+    position: absolute;
+    /*top: 10%;*/
+    width: 100vw;
+    /*height: 25%;*/
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    /*background-image: url(./resources/nebula.jpg);*/
+    /*background-size: cover;*/
+    /*z-index: 1;*/
+    overflow: hidden;
+}
+
+.navBar h1 {
+    position: absolute;
+    top: 7%;
+    left: 75%;
     transform: translate(-50%, -50%);
-    font-size: 5em;
-    text-shadow: 4px 4px 2px purple, 5px 5px 2px cyan, 7px 7px 2px #ff5d0c;
-    color: yellow;
-    font-family: 'Exo', sans-serif;
+    font-size: 7em;
+    /*#ff5d0c*/
+    text-shadow: 3px 3px 1px #ff5d0c, -3px -3px 1px #ff5d0c;
+    color: #fffa00;
+    /*font-family: 'Exo', sans-serif;*/
+    font-family: 'Yellowtail', cursive;
+}
+
+.navBar h2 {
+    position: absolute;
+    top: 23%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75em;
+    /*#ff5d0c*/
+    /*#fffa00 */
+    /*text-shadow: 1px 1px 1px #fffa00, -1px -1px 1px #fffa00;*/
+    text-shadow: 1px 1px 1px #fffa00;
+    color: #ff5d0c;
+    /*font-family: 'Exo', sans-serif;*/
+    /*font-family: 'Yellowtail', cursive;*/
+    font-family: monospace;
+}
+
+.navBar h3 {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 2.25em;
+    /*#ff5d0c*/
+    text-shadow: 1px 1px 1px white, -1px -1px 1px white;
+    color: black;
+    font-family: 'Special Elite', cursive;
+}
+
+.navBar h5 {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    /*#ff5d0c*/
+    text-shadow: 1px 1px 1px white, -1px -1px 1px white;
+    color: black;
+    font-family: 'Special Elite', cursive;
+}
+
+.topGlyphicon {
+    color: #48b9d6;
+    font-size: 3em;
+    /*text-shadow: 2px 2px 1px #ff5d0c, -2px -2px 1px #ff5d0c;*/
+    /*-webkit-text-stroke: 2px black;*/
+    color: #e5e5e5;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quoteGlyphicon {
+    position: absolute;
+    color: #e5e5e5;
+    font-size: 3em;
+    /*text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;*/
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lookGlyphicon {
+    position: absolute;
+    color: #e5e5e5;
+    /*text-shadow: 1px 1px 2px black, -1px -1px 2px black;*/
+    font-size: 3em;
+    /*text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;*/
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .holdStuff {
     position: relative;
     width: 100vw;
-    /*height: 100vh;*/
-    height: auto;
-    background-color: #338093;
+    height: 100vh;
+    border-radius: 7px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0), #02721b, #68349b, #02721b, rgba(0, 0, 0, 0));
+    /*Animation Stuff*/
+    background-size: 400% 400%;
+    animation: backgroundGradient 15s ease infinite;
 }
 
 .title {
@@ -49,24 +143,279 @@ body {
     left: 50%;*/
     text-align: center;
     font-size: 3em;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Special Elite', cursive;
     /*transform: translate(-50%, -50%);*/
-    color: white;
-    text-shadow: 2px 2px 1px black;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;
+}
+
+.anotherTitle {
+    position: relative;
+    /*top: 10%;
+    left: 50%;*/
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Special Elite', cursive;
+    /*transform: translate(-50%, -50%);*/
+    color: #e5e5e5;
+    text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;
 }
 
 .words {
-    color: black;
-    font-family: 'Exo', sans-serif;
-    /*text-shadow: 2px 2px 1px white;*/
+    color: #e5e5e5;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    /*padding-bottom: 5%;*/
+    line-height: 150%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.moreWords {
+    color: #e5e5e5;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;
     padding-bottom: 5%;
+    line-height: 150%;
 }
 
 .einstein {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url(./resources/einstein.jpg);
+    background-color: red;
+    z-index: 1;
+}
+
+.holder {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /*visibility: hidden;*/
+    /*background-color: black;*/
+    background-image: url(./resources/nebula.jpg);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.quotes {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 7px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0), #cc2310, #fcc00c, #cc2310, rgba(0, 0, 0, 0));
+    /*Animation Stuff*/
+    background-size: 400% 400%;
+    animation: backgroundGradient 15s ease infinite;
+}
+
+@keyframes backgroundGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.newBackground {
+    background-color: red;
+}
+
+.drums {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 7px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), black, grey, black, rgba(0, 0, 0, 0));
+    /*Animation Stuff*/
+    background-size: 400% 400%;
+    animation: backgroundGradient 15s ease infinite;
+    transition: all .07s ease-in ease-out;
+}
+
+.drumsGlyphicon {
+    position: absolute;
+    color: #e5e5e5;
+    font-size: 3em;
+    /*text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;*/
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+}
+
+.videoWrapper {
+    /*position: fixed;*/
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    top: 0;
+    left: 0;
+}
+
+#video-bg-elem {
+    position: fixed;
+    position: relative;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*min-height: 100%;*/
+    /*min-width: 100%;*/
+    width: 100%;
+}
+
+.look {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), #1a37dd, red, #1a37dd, rgba(0, 0, 0, 0));
+    /*Animation Stuff*/
+    background-size: 400% 400%;
+    animation: backgroundGradient 15s ease infinite;
+}
+
+.look h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 1px black, 1.5px 1.5px 1px black, -.5px -.5px 1px black, -1px -1px 1px black;
+}
+
+.thumbnails {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
+}
+
+.thumbnails img {
+    border-radius: 7px;
+}
+
+.adventurePic {
+    position: relative;
+    top: 45%;
+    left: 2.5%;
+    box-shadow: 8px 8px 6px black;
+}
+
+
+/*.adventurePic:hover {
+    height: 270px;
+    width: 450px;
+}*/
+
+.alamodPic {
+    position: relative;
+    top: 5%;
+    left: 3%;
+    box-shadow: 8px 8px 6px white;
+}
+
+
+/*.alamodPic:hover {
+    position: relative;
+    height: 270px;
+    width: 450px;
+    top: 5%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}*/
+
+.vetPic {
+    position: relative;
+    top: 5%;
+    left: 2%;
+    box-shadow: 8px 8px 6px white;
+}
+
+
+/*.vetPic:hover {
+    position: relative;
+    height: 270px;
+    width: 450px;
+    top: 5%;
+    left: -1%;
+}*/
+
+.keys {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+}
+
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+.facebook {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px black;
+    margin-right: 20px;
+}
+
+.instagram {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px black;
+    margin-left: 20px;
 }

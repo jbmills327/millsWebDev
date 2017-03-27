@@ -8,19 +8,27 @@ function mainController($http, millsfactory) {
 
     main.greeting = "What up yo";
 
-    main.nasa = {};
+    main.scrollQuote = function(e) {
+        console.log("This is firing and e is: ", e);
+        document.querySelector(e).scrollIntoView({
+            behavior: "smooth"
+        });
 
-
-    main.photo = function() {
-        millsfactory.getNasa()
-            .then(function(returnData) {
-                console.log("This is the returnData", returnData);
-                main.nasa = returnData.data;
-                console.log("This is main.nasa", main.nasa);
-            }).catch(function(err) {
-                console.log("This is the error", err);
-            })
     }
 
-    main.photo();
+    // main.nasa = {};
+    //
+    //
+    // main.photo = function() {
+    //     millsfactory.getNasa()
+    //         .then(function(returnData) {
+    //             console.log("This is the returnData", returnData);
+    //             main.nasa = returnData.data;
+    //             console.log("This is main.nasa", main.nasa);
+    //         }).catch(function(err) {
+    //             console.log("This is the error", err);
+    //         })
+    // }
+    //
+    // main.photo();
 }
